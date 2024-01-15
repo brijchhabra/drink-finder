@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.fun {
-    color: aquamarine;
-    font-size: 100px;
+.btn {
+    @apply text-gray-950 bg-sky-400 hover:border-2 border-gray-800 rounded-lg w-20 h-10 mt-10 hover:bg-sky-600 transition-all
 }

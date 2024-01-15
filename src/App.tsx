@@ -29,15 +29,24 @@ function App() {
 
   return (
     <>
-      
-      <div className="flex flex-col items-center justify-around bg-gray-900 ">
-      <h1 className="text-red-500 text-[200px]"> Fun Fun Fun </h1>
-        <p> {drink?.strDrink} </p>
-        <img src={drink?.strDrinkThumb} />
-        
-        <p className=" text-red-500"> {drink?.strInstructions} </p>
-        <button onClick={clicked} className="text-red-500 outline-solid border rounded-lg m-20 outline.offset.2"> refresh </button>
-        <p className=" text-red-600">You have refreshed {number} times</p>
+      <div className="flex flex-col items-center justify-center bg-gray-950 min-h-screen">
+        <h1 className="text-sky-600 text-8xl absolute top-20">Drink Finder</h1>
+        <div className="flex">
+          <img src={drink?.strDrinkThumb} className="w-72 mr-8 rounded-md shadow-lg"/>
+          <div className="flex flex-col items-center bg-gray-900 rounded-md min-h-min">
+            <h1 className="text-xl text-sky-400 text-center p-4">
+              {drink?.strDrink}
+            </h1>
+            <p className="text-sky-300 w-72 mt-6 p-4">{drink?.strInstructions}</p>
+          </div>
+        </div>
+
+        <button
+          onClick={clicked}
+          className="btn">
+          refresh
+        </button>
+        <p className="text-sky-300 relative top-6">You have refreshed {number} times</p>
       </div>
     </>
   );
