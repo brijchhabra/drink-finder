@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .btn {
-    @apply text-gray-950 bg-sky-400 hover:border-2 border-gray-800 rounded-lg w-20 h-10 mt-10 hover:bg-sky-600 transition-all
+    @apply text-slate-900 bg-sky-400 hover:border-2 border-slate-800 rounded-lg w-20 h-10 mt-10 hover:bg-sky-600 transition-all
+}
+
+.btnRed {
+    @apply text-slate-900 bg-pink-600 hover:border-2 border-slate-800 rounded-lg w-20 h-10 mt-10 hover:bg-pink-700 transition-all
 }
